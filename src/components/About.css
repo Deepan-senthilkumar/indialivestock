@@ -1,0 +1,103 @@
+.about-industrial {
+  padding: var(--space-xl) 0;
+  background: var(--white);
+}
+
+.about-split-dense {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.about-content h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.prose-business {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--grey-600);
+  margin-bottom: 3.5rem;
+}
+
+.value-pillars {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.pillar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.pillar-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.pillar h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: var(--brand-dark);
+}
+
+.pillar p {
+  font-size: 0.9rem;
+  color: var(--grey-600);
+  font-weight: 600;
+}
+
+.about-image-industrial {
+  position: relative;
+  border: 1px solid var(--grey-200);
+}
+
+.about-image-industrial img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  filter: grayscale(10%);
+}
+
+.experience-tag {
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+  background: var(--brand-dark);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 10px 10px 0 var(--primary);
+}
+
+.experience-tag strong {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--accent);
+}
+
+.experience-tag span {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1024px) {
+  .about-split-dense {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .experience-tag {
+    position: static;
+    margin-top: 2rem;
+  }
+}

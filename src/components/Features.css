@@ -1,0 +1,142 @@
+.dual-focus-section {
+  padding: 0;
+  background: var(--white);
+  width: 100%;
+}
+
+.dual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 750px;
+}
+
+.focus-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 0;
+}
+
+.exhibit-panel {
+  background: var(--brand-dark);
+  color: white;
+}
+
+.visit-panel {
+  background: var(--white);
+}
+
+.panel-content-wrapper {
+  max-width: 600px;
+  width: 100%;
+  padding: 0 4rem;
+}
+
+.panel-content-wrapper.left {
+  margin-left: auto;
+  padding-right: 6rem;
+}
+
+.panel-content-wrapper.right {
+  margin-right: auto;
+  padding-left: 6rem;
+}
+
+.panel-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.exhibit-panel .panel-tag {
+  color: var(--accent);
+}
+
+.visit-panel .panel-tag {
+  color: var(--primary);
+}
+
+.focus-panel h2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.exhibit-panel h2 {
+  color: white;
+}
+
+.visit-panel h2 {
+  color: var(--brand-dark);
+}
+
+.focus-panel p {
+  font-size: 1.2rem;
+  margin-bottom: 3.5rem;
+  line-height: 1.6;
+}
+
+.exhibit-panel p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.visit-panel p {
+  color: var(--grey-600);
+}
+
+.focus-list {
+  list-style: none;
+  margin-bottom: 4.5rem;
+}
+
+.focus-list li {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  font-weight: 700;
+}
+
+.exhibit-panel .focus-list li {
+  color: white;
+}
+
+.visit-panel .focus-list li {
+  color: var(--brand-dark);
+}
+
+.focus-icon {
+  flex-shrink: 0;
+}
+
+.exhibit-panel .focus-icon {
+  color: var(--accent);
+}
+
+.visit-panel .focus-icon {
+  color: var(--primary);
+}
+
+@media (max-width: 1200px) {
+  .panel-content-wrapper {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dual-grid {
+    grid-template-columns: 1fr;
+  }
+  .focus-panel {
+    padding: 6rem 2rem;
+  }
+  .panel-content-wrapper {
+    max-width: 100%;
+    margin: 0 !important;
+    padding: 0 2rem;
+  }
+}

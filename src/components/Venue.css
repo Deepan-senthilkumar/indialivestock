@@ -1,0 +1,108 @@
+.venue-section {
+  background-color: var(--white);
+  padding: var(--space-xl) 0;
+}
+
+.venue-card-industrial {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+}
+
+.venue-info-panel {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.venue-info-panel h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.address-block {
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--primary);
+  margin-bottom: 3rem;
+}
+
+.address-block p {
+  font-weight: 700;
+  color: var(--brand-dark);
+  font-size: 1.1rem;
+}
+
+.access-grid-dense {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.access-item-small {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.access-item-small strong {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--grey-600);
+  letter-spacing: 1px;
+}
+
+.access-item-small span {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+.venue-visual-large {
+  height: 650px;
+  position: relative;
+  background: var(--grey-100);
+}
+
+.venue-visual-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.venue-badge-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--brand-dark);
+  color: white;
+  padding: 3rem;
+  max-width: 300px;
+}
+
+.venue-badge-overlay h4 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.venue-badge-overlay p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .venue-card-industrial {
+    grid-template-columns: 1fr;
+  }
+  .venue-info-panel {
+    padding: 3rem 2rem;
+  }
+  .venue-visual-large {
+    height: 400px;
+  }
+}

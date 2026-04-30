@@ -1,0 +1,50 @@
+.cta-banner {
+  padding: 4rem 0;
+  background-color: var(--white);
+}
+
+.cta-card-industrial {
+  background: var(--brand-dark);
+  color: white;
+  padding: 4.5rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.cta-content h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.cta-content p {
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 1.5rem;
+  flex-shrink: 0;
+}
+
+.cta-banner .btn-outline {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.cta-banner .btn-outline:hover {
+  background: white;
+  color: var(--brand-dark);
+}
+
+@media (max-width: 1024px) {
+  .cta-card-industrial {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+  }
+}

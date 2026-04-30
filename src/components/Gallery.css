@@ -1,0 +1,114 @@
+.gallery-neat-section {
+  padding: var(--space-xl) 0;
+  background: var(--off-white);
+}
+
+.gallery-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+
+.gallery-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.control-btn {
+  width: 50px;
+  height: 50px;
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--brand-dark);
+}
+
+.control-btn:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.gallery-viewport-wrapper {
+  max-width: 1320px; /* SITE CONTAINER WIDTH */
+  margin: 0 auto;
+  overflow: hidden; /* STRICT OVERFLOW HIDDEN */
+  padding: 0 1rem;
+}
+
+.gallery-viewport {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+
+.gallery-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-shelf {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+}
+
+.gallery-tile {
+  /* Exactly 3 visible: (TotalWidth - 2Gaps) / 3 */
+  width: calc((1320px - 2rem - 3rem) / 3); 
+  height: 400px;
+  flex-shrink: 0;
+  position: relative;
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+}
+
+.gallery-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tile-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1320px) {
+  .gallery-viewport-wrapper {
+    max-width: 100%;
+  }
+  .gallery-tile {
+    width: calc((100vw - 2rem - 3rem) / 3);
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery-tile {
+    width: calc((100vw - 4rem - 1.5rem) / 2); /* 2 visible on tablet */
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-tile {
+    width: calc(100vw - 4rem); /* 1 visible on mobile */
+    height: 300px;
+  }
+}
