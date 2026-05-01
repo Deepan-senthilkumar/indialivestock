@@ -4,6 +4,7 @@
   /* Core Brand Palette - Industrial Authority */
   --brand-dark: #1a0608; 
   --brand-dark-light: #2d0a0e;
+  --brand-heritage: #4D1D1D; /* New Heritage Brown for fonts */
   --primary: #c8102e; 
   --primary-dark: #a50d26;
   --accent: #ffd60a;
@@ -61,7 +62,7 @@ body {
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
   line-height: 1.2;
-  color: var(--brand-dark);
+  color: var(--brand-heritage);
 }
 
 h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 900; letter-spacing: -2px; }

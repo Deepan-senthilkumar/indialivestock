@@ -10,9 +10,9 @@ const Hero = () => {
           <div className="hero-content">
             <div className="hero-badge">
               <ShieldCheck size={14} />
-              <span>Official 2027 Edition</span>
+              <span>India's Largest Livestock Trade Fair</span>
             </div>
-            <h1>The Global Platform for <span>Livestock Industrial</span> Growth</h1>
+            <h1>Empowering the <span>Indigenous Cattle</span> Heritage of India</h1>
             <p className="hero-lead">
               Connecting international tech providers with India's massive animal husbandry 
               ecosystem for three days of high-value networking and trade.
@@ -37,7 +37,7 @@ const Hero = () => {
           
           <div className="hero-visual">
             <div className="hero-image-container">
-              <img src="/hero-bg.png" alt="India Livestock Show Hall" />
+              <img src="/real-hero.jpg" alt="India Livestock Show Hall" />
             </div>
           </div>
         </div>

@@ -6,12 +6,10 @@ const Gallery = () => {
   const scrollRef = useRef(null);
 
   const photos = [
-    { src: '/gallery1.png', label: 'B2B Networking' },
-    { src: '/gallery2.png', label: 'Trade Show Floor' },
-    { src: '/highlight-expo.png', label: 'Live Demonstrations' },
-    { src: '/highlight-launch.png', label: 'Technology Launch' },
-    { src: '/about-collage.png', label: 'International Delegates' },
-    { src: '/highlight-networking.png', label: 'Global Partnerships' },
+    { src: '/real-gallery1.jpg', label: 'B2B Networking' },
+    { src: '/real-gallery2.jpg', label: 'Trade Show Floor' },
+    { src: '/real-hero.jpg', label: 'Live Demonstrations' },
+    { src: '/real-about.jpg', label: 'Technology Launch' },
   ];
 
   const scroll = (direction) => {

@@ -18,19 +18,20 @@
   text-transform: uppercase;
   font-weight: 900;
   margin-bottom: 0.5rem; /* Reduced from 1rem */
+  color: white; /* Force white for visibility */
 }
 
 .hero-content h1 span {
-  color: var(--primary);
+  color: white; /* Changed from brand-heritage for visibility */
   display: block;
 }
 
 .hero-lead {
-  font-size: 1rem;
-  opacity: 0.8;
-  line-height: 1.5;
-  margin-bottom: 1.25rem; /* Reduced from 1.5rem */
-  max-width: 500px;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3.5rem;
+  max-width: 600px;
 }
 
 .hero-badge {
@@ -69,18 +70,83 @@
   gap: 1rem;
 }
 
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero-image-frame {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  height: 520px;
+  z-index: 1;
+}
+
+/* Bottom Decorative Layer - Asymmetric Brand Shape */
+.hero-image-frame::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-lg);
+  z-index: -1;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+}
+
+/* Secondary Offset Frame */
+.hero-image-frame::after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 80px;
+  height: 80px;
+  background: var(--primary);
+  opacity: 0.15;
+  border-radius: var(--radius-sm);
+  z-index: 0;
+}
+
 .hero-image-container {
   position: relative;
   width: 100%;
-  height: 450px; /* Reduced from 600px */
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl, 0 30px 60px rgba(0,0,0,0.4));
+  z-index: 2;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  /* Clipped corner effect */
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
 }
 
 .hero-image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-image-frame:hover img {
+  transform: scale(1.05);
+}
+
+/* Extra Geometric Accent */
+.image-accent-dot {
+  position: absolute;
+  bottom: -10px;
+  left: 20%;
+  width: 60%;
+  height: 4px;
+  background: var(--primary);
+  opacity: 0.8;
+  z-index: 3;
 }
 
 @media (max-width: 1024px) {

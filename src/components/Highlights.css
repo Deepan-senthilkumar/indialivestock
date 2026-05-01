@@ -1,7 +1,34 @@
 .highlights-unique {
-  background: #F3F1EC; /* Stone Grey */
+  background: var(--off-white);
   padding: var(--space-xl) 0;
   overflow: hidden;
+  position: relative; /* For side watermarks */
+}
+
+.side-watermark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.7; /* 70% visibility */
+  pointer-events: none;
+  z-index: 0;
+}
+
+.side-watermark.left {
+  left: -643px;
+  transform: translateY(-60%) scaleX(-1); /* Flip for symmetry */
+}
+
+.side-watermark.right {
+  right: -300px;
+  transform: translateY(150%); /* Flip for symmetry */
+}
+.side-watermark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .opp-simple-flow {
@@ -32,7 +59,7 @@
   width: 80px;
   height: 80px;
   background: var(--white);
-  color: var(--brand-dark);
+  color: var(--brand-heritage);
   border: 1px solid var(--grey-200);
   border-radius: 50%;
   display: flex;
@@ -53,7 +80,7 @@
   font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: var(--brand-dark);
+  color: var(--brand-heritage);
   margin-bottom: 1rem;
 }
 
@@ -79,6 +106,35 @@
   opacity: 0.3;
 }
 
+
+/* Watermark Utility */
+.watermark-bg {
+  position: relative;
+}
+
+.watermark-bg::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-image: url('/cow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.7; /* Increased to 70% as requested */
+  pointer-events: none;
+  z-index: 0;
+  color: #F3F1EC;
+}
+
+.watermark-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
 @media (max-width: 1024px) {
   .opp-simple-flow {
     flex-direction: column;
@@ -89,5 +145,11 @@
   }
   .opp-step-card {
     padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .side-watermark {
+    display: none;
   }
 }

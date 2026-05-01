@@ -23,6 +23,12 @@ const Highlights = () => {
 
   return (
     <section className="section highlights-unique">
+      <div className="side-watermark left">
+        <img src="/cow.png" alt="" />
+      </div>
+      <div className="side-watermark right">
+        <img src="/cow.png" alt="" />
+      </div>
       <div className="container">
         <div className="section-header center">
           <span className="subtitle">Our Roadmap</span>

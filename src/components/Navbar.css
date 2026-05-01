@@ -1,11 +1,11 @@
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 0.75rem 0;
-  background: white;
+  padding: 1rem 0;
+  background: var(--white);
   border-bottom: 2px solid var(--primary);
   transition: var(--transition);
   box-shadow: var(--shadow-subtle);

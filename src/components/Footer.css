@@ -1,6 +1,6 @@
 .footer-premium {
-  background-color: var(--brand-dark); /* Using main section background */
-  padding: 2.5rem 0 1.5rem;
+  background-color: var(--brand-dark);
+  padding: 5rem 0 2rem;
   color: rgba(255, 255, 255, 0.7);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }

@@ -31,7 +31,7 @@
 
 .address-block p {
   font-weight: 700;
-  color: var(--brand-dark);
+  color: var(--brand-heritage);
   font-size: 1.1rem;
 }
 
@@ -59,7 +59,7 @@
 .access-item-small span {
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--brand-dark);
+  color: var(--brand-heritage);
 }
 
 .venue-visual-large {

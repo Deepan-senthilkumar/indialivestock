@@ -26,6 +26,7 @@
   cursor: pointer;
   transition: var(--transition);
   color: var(--brand-dark);
+  border-radius: var(--radius-sm);
 }
 
 .control-btn:hover {
@@ -67,6 +68,15 @@
   position: relative;
   background: var(--white);
   border: 1px solid var(--grey-200);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.gallery-tile:hover {
+  border-color: var(--primary);
+  transform: scale(1.02);
+  z-index: 2;
 }
 
 .gallery-tile img {
