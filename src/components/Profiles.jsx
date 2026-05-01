@@ -22,26 +22,26 @@ const Profiles = () => {
     },
     {
       icon: <FlaskConical size={32} />,
-      title: 'Health & Bio-Tech',
-      items: ['Veterinary Products', 'Animal Biotechnology', 'Pharmaceutical Products'],
+      title: 'Health & Biotechnology',
+      items: ['Veterinary Products & Services', 'Animal Biotechnology / Biosecurity', 'Herbal Animal Health Products', 'Pharmaceutical Products'],
       color: 'blue'
     },
     {
       icon: <Settings size={32} />,
-      title: 'Machinery & Tools',
-      items: ['Cattle Feed Machinery', 'Farming Equipment', 'Packing Equipment'],
+      title: 'Machinery & Equipment',
+      items: ['Cattle Feed Machinery', 'Farming Equipment', 'Packing Equipment & Materials', 'Egg Trays'],
       color: 'grey'
     },
     {
       icon: <MonitorDot size={32} />,
-      title: 'IT & Incubation',
-      items: ['IT/Software Technologies', 'Incubation Systems', 'Technology Traders', 'Laboratory Instruments'],
+      title: 'Technology & Production',
+      items: ['IT/Software Technologies', 'Incubation Systems', 'Animal Laboratory / Instruments', 'Livestock Technology & Product Traders'],
       color: 'dark'
     },
     {
       icon: <PawPrint size={32} />,
-      title: 'Breeding & Production',
-      items: ['Animal Breeders', 'Meat and Meat Products', 'Fisheries & Agricultures'],
+      title: 'Breeding & Agriculture',
+      items: ['Animal Breeders', 'Cattle Farming', 'Meat & Meat Products', 'Fisheries & Agriculture'],
       color: 'red'
     }
   ];
@@ -49,28 +49,28 @@ const Profiles = () => {
   const visitorHub = [
     {
       icon: <Briefcase size={28} />,
-      title: 'Business & Media',
-      items: ['Trade Industry & Media', 'Investors & Entrepreneurs', 'Consultants', 'Bankers']
+      title: 'Business & Trade',
+      items: ['Trade Industry & Trade Media', 'Investors & Entrepreneurs', 'Consultants']
     },
     {
       icon: <Microscope size={28} />,
-      title: 'Science & Research',
-      items: ['Scientists & Technologists', 'Research Institutes']
+      title: 'Science & Education',
+      items: ['Scientists & Technologists','Agricultural Research Institutions', 'Educationalists & Students']
     },
     {
       icon: <PawPrint size={28} />,
-      title: 'Field & Farming',
-      items: ['Progressive Farmers', 'Farm Contractors']
+      title: 'Field & Operations',
+      items: ['Farmers', 'Farm Contractors', 'Dealers & Distributors']
     },
     {
       icon: <Truck size={28} />,
-      title: 'Logistics',
-      items: ['Logistics Experts', 'Dealers & Distributors']
+      title: 'Logistics & Governance',
+      items: ['Transport & Logistics Experts', 'Government Authorities', 'Bankers']
     },
     {
       icon: <ShieldCheck size={28} />,
-      title: 'Governance',
-      items: ['Govt. Authorities', 'Importers and Exporters']
+      title: 'Global & Organizations',
+      items: ['Importers & Exporters', 'Trade Organisations', 'NGOs']
     }
   ];
 
@@ -85,7 +85,7 @@ const Profiles = () => {
               <img src="/download.png" alt="" />  
             </div>
             <span className="hub-badge">Industry Network</span>
-            <h2>Exhibitors <span className="text-primary">&</span> Visitors</h2>
+            <h2>Who <span className="text-primary">Participates?</span></h2>
           </div>
           <p>
             Connecting the entire livestock value chain—from laboratory research to field production.
@@ -94,6 +94,10 @@ const Profiles = () => {
 
         {/* EXHIBITORS SMART GRID */}
         <div className="hub-grid exhibitors-hub">
+          <div className="sub-hub-header">
+            <h3>Exhibitor Profile</h3>
+            <div className="accent-line"></div>
+          </div>
           <div className="smart-cards">
             {exhibitorHub.map((card, i) => (
               <div key={i} className={`smart-card border-${card.color}`}>
@@ -111,6 +115,10 @@ const Profiles = () => {
 
         {/* VISITORS SMART GRID */}
         <div className="hub-grid visitors-hub">
+          <div className="sub-hub-header">
+            <h3>Visitor Profile</h3>
+            <div className="accent-line"></div>
+          </div>
           <div className="smart-cards">
             {visitorHub.map((card, i) => (
               <div key={i} className="smart-card visitor-card">

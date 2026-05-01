@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero-content-simple">
           <div className="hero-location-label">
-            <span>28, 29, 30 January 2027 • Coimbatore, India</span>
+            <span>28, 29, 30 January 2027 • Coimbatore, India • 10 AM - 6 PM</span>
           </div>
           
           <h1 className="hero-title-neat">
@@ -26,7 +26,7 @@ const Hero = () => {
 
           <div className="hero-actions-simple">
             <a href="#contact" className="btn btn-primary">Book Your Stall</a>
-            <a href="#about" className="btn-outline-white">Learn More</a>
+            <a href="#about" className="btn btn-outline-white">Learn More</a>
           </div>
         </div>
       </div>

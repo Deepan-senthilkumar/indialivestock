@@ -1,4 +1,4 @@
-import { Plane, Train } from 'lucide-react';
+import { Plane, Train, Clock } from 'lucide-react';
 import venueImg from '../assets/Codissia-Coimbatore.webp';
 import './Venue.css';
 
@@ -18,23 +18,26 @@ const Venue = () => {
 
             <p className="venue-description-text">
               Known as the <strong>"Manchester of South India,"</strong> Coimbatore is a thriving industrial hub. 
-              The CODISSIA Trade Fair Complex is a world-class venue, perfectly equipped to host 
-              South India's premier livestock event with state-of-the-art infrastructure.
+              The CODISSIA Trade Fair Complex is a world-class venue, perfectly equipped to host South India’s premier livestock event with state-of-the-art infrastructure.
             </p>
 
             <div className="access-metrics">
               <div className="metric-row">
                 <Plane size={20} />
-                <span>05 KM from Coimbatore International Airport</span>
+                <span>04 km from Coimbatore International Airport</span>
               </div>
               <div className="metric-row">
                 <Train size={20} />
-                <span>15 KM from Coimbatore Railway Station</span>
+                <span>10 km from Coimbatore Railway Station</span>
+              </div>
+              <div className="metric-row">
+                <Clock size={20} />
+                <span>Exhibition Timing: 10 am - 6 pm</span>
               </div>
             </div>
 
             <p className="venue-description-text">
-              The complex is strategically located for easy access via National Highways, 
+              The complex is strategically located with easy access to national highways, 
               ensuring smooth transit for both domestic and international participants.
             </p>
             

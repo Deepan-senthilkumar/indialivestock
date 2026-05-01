@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, ChevronRight } from 'lucide-react';
+import { MapPin, Phone, Mail, ChevronRight, Clock } from 'lucide-react';
 import './Footer.css';
 import orgLogo from '../assets/image.png';
 
@@ -6,10 +6,12 @@ import orgLogo from '../assets/image.png';
 const Footer = () => {
   const quickLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Exhibitors', href: '#profiles' },
-    { name: 'Visitors', href: '#features' },
-    { name: 'Brochure', href: '#contact' },
-    { name: 'Media', href: '#media' },
+    { name: 'Exhibitors & Visitors', href: '#profiles' },
+    { name: 'Services', href: '#convenience' },
+    // { name: 'Visitors', href: '#features' },
+    // { name: 'Brochure', href: '#contact' },
+    // { name: 'Media', href: '#media' },
+    { name: 'Venue', href: '#venue' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -48,6 +50,10 @@ const Footer = () => {
               <li>
                 <MapPin size={16} className="footer-icon-minimal" />
                 <span>Codissia Trade Fair Complex, Coimbatore</span>
+              </li>
+              <li>
+                <Clock size={16} className="footer-icon-minimal" />
+                <span>Exhibition Timing: 10 am - 6 pm</span>
               </li>
               <li>
                 <Phone size={16} className="footer-icon-minimal" />

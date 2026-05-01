@@ -1,11 +1,10 @@
-import React from 'react';
 import './Stats.css';
 
 const Stats = () => {
   const stats = [
     { number: '100+', label: 'Exhibitors' },
-    { number: '500+', label: 'Buyer Seller Meetings' },
-    { number: '2400', label: 'Sq.m Area' },
+    { number: '500+', label: 'BUYER SELLER MEETINGS ORGANISED' },
+    { number: '2400', label: 'SQ.M  EXHIBITION AREA' },
     { number: '5000+', label: 'Trade Visitors' },
   ];
 

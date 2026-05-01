@@ -109,10 +109,22 @@
 @media (max-width: 1024px) {
   .about-split-dense {
     grid-template-columns: 1fr;
-    gap: 4rem;
+    gap: 3rem;
+  }
+  .about-image-industrial img {
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    background: white;
   }
   .experience-tag {
     position: static;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
   }
+}
+
+@media (max-width: 576px) {
+  .about-content h2 { font-size: 1.8rem; }
+  .prose-business { font-size: 1rem; margin-bottom: 2rem; }
 }

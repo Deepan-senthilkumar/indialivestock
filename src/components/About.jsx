@@ -10,17 +10,9 @@ const About = () => {
             <span className="subtitle">Welcome to ILS 2027</span>
             <h2>South India's Largest Livestock Industry Hub</h2>
             <p className="prose-business">
-              The India Livestock Show is rapidly emerging as the largest and most influential among 
-              South India. Our focus on innovation, sustainability, and regional market trends 
-              stands out due to its sheer market size, consumption patterns, and rapid 
-              industry transformation.
-            </p>
-            <p className="prose-business mt-small">
-              Being South India’s one of the largest Livestock Industry, the sector has been 
-              witnessing significant growth, driven by increasing demand for high-quality animal 
-              products and modern breeding technologies.
-            </p>
-            
+              The India Livestock Show, held annually at the CODISSIA Trade Fair Complex in Coimbatore, is one of South India’s leading exhibitions for the livestock and agricultural sectors. It showcases innovations in animal husbandry, feed production, veterinary products, incubation systems, and processing technologies, while providing a strong platform for exhibitors to introduce advanced solutions to industry professionals. <br />
+              <br/>
+              The event also hosts conferences and knowledge-sharing sessions, bringing together breeders, farmers, exporters, and service providers. By encouraging collaboration, innovation, and sustainable practices, the India Livestock Show plays a vital role in advancing India’s livestock industry and supporting regional economic growth.</p>
             <div className="value-pillars">
               <div className="pillar">
                 <Target size={24} className="pillar-icon" />

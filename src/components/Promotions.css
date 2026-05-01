@@ -153,8 +153,30 @@
 
 @media (max-width: 992px) {
   .promo-container { flex-direction: column; }
-  .promo-side-panel, .promo-main-panel { width: 100%; text-align: center; justify-content: center; }
+  .promo-side-panel, .promo-main-panel { width: 100%; }
+  
+  .promo-side-panel {
+    text-align: center;
+    justify-content: center;
+    padding: 60px 1.5rem;
+    border-radius: 0;
+  }
+  
   .side-divider { margin: 0 auto 2rem; }
-  .channels-list { grid-template-columns: 1fr; }
-  .channel-row { justify-content: center; }
+  
+  .promo-main-panel {
+    padding: 40px 1rem;
+    justify-content: center;
+  }
+
+  .channels-list { 
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .channel-row { 
+    justify-content: flex-start; 
+    text-align: left;
+  }
 }

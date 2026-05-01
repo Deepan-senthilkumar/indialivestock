@@ -21,7 +21,7 @@ const Highlights = () => {
   ];
 
   return (
-    <section className="section highlights-unique">
+    <section id="convenience" className="section highlights-unique">
       <div className="side-watermark left">
         <img src="/cow.png" alt="" />
       </div>

@@ -185,6 +185,16 @@ h3 { font-size: 1.5rem; font-weight: 700; }
 }
 
 @media (max-width: 1024px) {
-  :root { --space-lg: 4rem; --space-xl: 6rem; }
+  :root { --space-lg: 3rem; --space-xl: 4rem; }
   .split-layout { grid-template-columns: 1fr; gap: 3rem; }
+  h1 { font-size: clamp(2rem, 8vw, 3.5rem); }
+  h2 { font-size: clamp(1.75rem, 6vw, 2.5rem); }
+}
+
+@media (max-width: 576px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.3rem; }
+  .section { padding: 3rem 0; }
+  .container { padding: 0 1rem; }
 }

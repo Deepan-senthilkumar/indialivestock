@@ -118,3 +118,24 @@
     height: 400px;
   }
 }
+
+@media (max-width: 576px) {
+  .venue-visual-large {
+    height: 300px;
+  }
+  .venue-info-panel {
+    padding: 2.5rem 1rem;
+  }
+  .venue-badge-overlay {
+    padding: 1rem;
+    max-width: 180px;
+  }
+  .venue-badge-overlay h4 {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+  .venue-badge-overlay p {
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
+}
