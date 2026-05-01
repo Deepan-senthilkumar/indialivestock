@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import logoImg from '../assets/image.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container nav-container">
         <a href="#home" className="nav-logo">
-          <img src="/src/assets/image.png" alt="India Livestock Show 2027" />
+          <img src={logoImg} alt="India Livestock Show 2027" />
         </a>
 
         <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
