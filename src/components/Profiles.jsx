@@ -81,6 +81,9 @@ const Profiles = () => {
         {/* SECTION HEADER */}
         <div className="hub-intro">
           <div className="hub-title-block">
+            <div className="about-watermark">
+              <img src="/download.png" alt="" />  
+            </div>
             <span className="hub-badge">Industry Network</span>
             <h2>Exhibitors <span className="text-primary">&</span> Visitors</h2>
           </div>

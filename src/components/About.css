@@ -1,6 +1,8 @@
 .about-industrial {
   padding: var(--space-xl) 0;
   background: var(--off-white);
+  position: relative;
+  overflow: hidden;
 }
 
 .about-split-dense {

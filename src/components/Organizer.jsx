@@ -1,5 +1,4 @@
-import React from 'react';
-import { ShieldCheck, Award, Users, Globe, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Award, Users, Globe, ArrowRight, CheckCircle2 } from 'lucide-react';
 import './Organizer.css';
 
 import orgLogo from '../assets/image.png';

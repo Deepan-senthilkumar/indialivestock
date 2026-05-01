@@ -1,4 +1,3 @@
-import React from 'react';
 import { Briefcase, Zap, Globe } from 'lucide-react';
 import './Highlights.css';
 

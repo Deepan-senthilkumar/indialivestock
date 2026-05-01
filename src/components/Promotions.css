@@ -65,37 +65,37 @@
   display: flex;
   align-items: center;
   position: relative; /* For background decorations */
-  background-color: #ffffff;
-  background-image: radial-gradient(#eee 1.5px, transparent 1.5px);
-  background-size: 40px 40px; /* Visible dot grid */
+  background:
+    radial-gradient(circle at 75% 20%, rgba(200, 30, 60, 0.05), transparent 35%),
+    radial-gradient(circle at 20% 80%, rgba(0, 0, 0, 0.03), transparent 40%);
+  overflow: hidden;
 }
 
-/* DECORATIVE SIGNAL RINGS */
-/* .promo-main-panel::after {
-  content: '';
+.promo-main-panel::before {
+  content: "";
   position: absolute;
-  top: -10%;
-  right: -10%;
-  width: 400px;
-  height: 400px;
-  border: 40px solid #f9f9f9;
-  border-radius: 50%;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.2;
   z-index: 0;
-  pointer-events: none;
-} */
+}
 
-/* .promo-main-panel::before {
-  content: '';
+.promo-main-panel::after {
+  content: "";
   position: absolute;
-  bottom: -5%;
-  left: 10%;
-  width: 200px;
-  height: 200px;
-  border: 1px solid #f0f0f0;
-  border-radius: 50%;
+  top: 15%;
+  right: 10%;
+  width: 220px;
+  height: 140px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(6px);
   z-index: 0;
-  pointer-events: none;
-} */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 .channels-list {
   display: grid;
