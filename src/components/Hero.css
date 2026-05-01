@@ -104,18 +104,18 @@
 
 @media (max-width: 576px) {
   .hero-clean {
-    height: 65vh;
-    min-height: 420px;
-    padding-top: 60px; /* Account for navbar */
+    height: 60vh;
+    min-height: 400px;
+    padding: 100px 0 40px; 
   }
   .hero-title-neat {
     font-size: 2.2rem;
     letter-spacing: -1px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   .hero-tagline-neat {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
   .hero-actions-simple {
     flex-direction: row;

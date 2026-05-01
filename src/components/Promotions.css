@@ -170,13 +170,21 @@
   }
 
   .channels-list { 
-    grid-template-columns: 1fr;
-    max-width: 320px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
     margin: 0 auto;
+    gap: 30px;
   }
 
   .channel-row { 
     justify-content: flex-start; 
     text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .channels-list {
+    grid-template-columns: 1fr;
+    max-width: 320px;
   }
 }

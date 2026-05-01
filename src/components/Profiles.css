@@ -135,7 +135,7 @@
 
 .about-watermark {
   position: absolute;
-  top: 90%;
+  top: 91%;
   right: -100px;
   transform: translateY(-50%);
   width: 300px;
@@ -179,6 +179,10 @@
   .visitors-hub .smart-cards {
     grid-template-columns: repeat(2, 1fr);
   }
+  .about-watermark {
+    top: 95.2%;
+    right: -55px
+  }
 }
 
 @media (max-width: 600px) {
@@ -188,4 +192,7 @@
   }
   .hub-intro h2 { font-size: 2rem; }
   .sub-hub-header h3 { font-size: 1.1rem; }
+  .about-watermark {
+    top: 96.8%
+  }
 }
