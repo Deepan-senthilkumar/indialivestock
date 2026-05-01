@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section id="home" className="hero-clean">
       <div className="hero-background-base">
-        <img src="/src/assets/main_bg.jpg" alt="India Livestock Show 2027" />
+        <img src="src/assets/main_bg.jpg" alt="India Livestock Show 2027" />
         <div className="hero-simple-overlay"></div>
       </div>
 
