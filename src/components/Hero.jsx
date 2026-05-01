@@ -1,44 +1,31 @@
-import React from 'react';
-import { Calendar, MapPin, ShieldCheck } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
   return (
-    <section id="home" className="hero-section">
-      <div className="container">
-        <div className="hero-split">
-          <div className="hero-content">
-            <div className="hero-badge">
-              <ShieldCheck size={14} />
-              <span>India's Largest Livestock Trade Fair</span>
-            </div>
-            <h1>Empowering the <span>Indigenous Cattle</span> Heritage of India</h1>
-            <p className="hero-lead">
-              Connecting international tech providers with India's massive animal husbandry 
-              ecosystem for three days of high-value networking and trade.
-            </p>
-            
-            <div className="hero-details">
-              <div className="detail-item">
-                <Calendar size={20} />
-                <span>July 15-17, 2027</span>
-              </div>
-              <div className="detail-item">
-                <MapPin size={20} />
-                <span>Codissia, Coimbatore</span>
-              </div>
-            </div>
+    <section id="home" className="hero-clean">
+      <div className="hero-background-base">
+        <img src="/src/assets/main_bg.jpg" alt="India Livestock Show 2027" />
+        <div className="hero-simple-overlay"></div>
+      </div>
 
-            <div className="hero-btns">
-              <a href="#contact" className="btn btn-primary">Book Your Stall</a>
-              <a href="#about" className="btn btn-outline">Explore Event</a>
-            </div>
+      <div className="container">
+        <div className="hero-content-simple">
+          <div className="hero-location-label">
+            <span>28, 29, 30 January 2027 • Coimbatore, India</span>
           </div>
           
-          <div className="hero-visual">
-            <div className="hero-image-container">
-              <img src="/real-hero.jpg" alt="India Livestock Show Hall" />
-            </div>
+          <h1 className="hero-title-neat">
+            INDIA LIVESTOCK <br />
+            SHOW 2027
+          </h1>
+
+          <p className="hero-tagline-neat">
+            The Future of Livestock in South India
+          </p>
+
+          <div className="hero-actions-simple">
+            <a href="#contact" className="btn btn-primary">Book Your Stall</a>
+            <a href="#about" className="btn-outline-white">Learn More</a>
           </div>
         </div>
       </div>

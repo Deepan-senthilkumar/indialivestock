@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container nav-container">
         <a href="#home" className="nav-logo">
-          <img src="/logo.png" alt="India Livestock Show 2027" />
+          <img src="/src/assets/image.png" alt="India Livestock Show 2027" />
         </a>
 
         <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapPin, Phone, Mail, ChevronRight } from 'lucide-react';
 import './Footer.css';
 import orgLogo from '../assets/image.png';
@@ -48,11 +47,11 @@ const Footer = () => {
             <ul className="footer-contact-list">
               <li>
                 <MapPin size={16} className="footer-icon-minimal" />
-                <span>Codissia Complex, Coimbatore</span>
+                <span>Codissia Trade Fair Complex, Coimbatore</span>
               </li>
               <li>
                 <Phone size={16} className="footer-icon-minimal" />
-                <span>+91 98410 32027</span>
+                <span>+91-9391391162, +91-9566187502</span>
               </li>
               <li>
                 <Mail size={16} className="footer-icon-minimal" />
@@ -65,10 +64,12 @@ const Footer = () => {
         <div className="footer-divider-soft"></div>
 
         <div className="footer-bottom-strip">
-          <p className="copyright-text">© 2027 India Livestock Show.</p>
-          <div className="footer-legal-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms</a>
+          <p className="copyright-text">© 2027 India Livestock Show. All Rights Reserved.</p>
+          <div className="footer-credit">
+            <span>Developed and maintained by </span>
+            <a href="https://oceansoftwares.com" target="_blank" rel="noopener noreferrer">
+              Ocean Softwares
+            </a>
           </div>
         </div>
       </div>

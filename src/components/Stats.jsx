@@ -3,10 +3,10 @@ import './Stats.css';
 
 const Stats = () => {
   const stats = [
-    { number: '10,000+', label: 'Indigenous Live Cattle' },
-    { number: '10+ Cr.', label: 'Prize Money' },
-    { number: '1000+', label: 'Stall Exhibitors' },
-    { number: '5 Lakh+', label: 'Expected Footfall' },
+    { number: '100+', label: 'Exhibitors' },
+    { number: '500+', label: 'Buyer Seller Meetings' },
+    { number: '2400', label: 'Sq.m Area' },
+    { number: '5000+', label: 'Trade Visitors' },
   ];
 
   return (

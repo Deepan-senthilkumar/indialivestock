@@ -2,7 +2,6 @@
   background: var(--primary);
   padding: 3rem 0;
   border-radius: var(--radius-md);
-  margin: 0 2rem;
   box-shadow: 0 10px 30px rgba(200, 16, 46, 0.2);
 }
 

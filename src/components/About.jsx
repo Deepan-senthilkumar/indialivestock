@@ -1,5 +1,4 @@
-import React from 'react';
-import { History, Target, Users } from 'lucide-react';
+import { History, Target } from 'lucide-react';
 import './About.css';
 
 const About = () => {
@@ -8,35 +7,40 @@ const About = () => {
       <div className="container">
         <div className="about-split-dense">
           <div className="about-content">
-            <span className="subtitle">About The Show</span>
-            <h2>Bridging the Gap in Livestock Excellence</h2>
+            <span className="subtitle">Welcome to ILS 2027</span>
+            <h2>South India's Largest Livestock Industry Hub</h2>
             <p className="prose-business">
-              The India Livestock Show 2027 is a mission-driven B2B platform engineered 
-              to accelerate the modernization of India's animal husbandry sector. 
-              We bring together the brightest minds and the most advanced technologies 
-              under one roof at Coimbatore.
+              The India Livestock Show is rapidly emerging as the largest and most influential among 
+              South India. Our focus on innovation, sustainability, and regional market trends 
+              stands out due to its sheer market size, consumption patterns, and rapid 
+              industry transformation.
+            </p>
+            <p className="prose-business mt-small">
+              Being South India’s one of the largest Livestock Industry, the sector has been 
+              witnessing significant growth, driven by increasing demand for high-quality animal 
+              products and modern breeding technologies.
             </p>
             
             <div className="value-pillars">
               <div className="pillar">
                 <Target size={24} className="pillar-icon" />
                 <div>
-                  <h3>Direct B2B ROI</h3>
-                  <p>Focused on converting booth traffic into long-term business contracts.</p>
+                  <h3>Innovation & Growth</h3>
+                  <p>Setting the stage for leadership with insights and partnerships that shape the future.</p>
                 </div>
               </div>
               <div className="pillar">
-                <Users size={24} className="pillar-icon" />
+                <History size={24} className="pillar-icon" />
                 <div>
-                  <h3>Industry Network</h3>
-                  <p>Unparalleled access to policy makers and industry decision leaders.</p>
+                  <h3>Legacy Organizers</h3>
+                  <p>Brought to you by Prompt Trade Fairs, with over 1200 successful exhibitions nationwide.</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="about-image-industrial">
-            <img src="/real-about.jpg" alt="Show Scale" />
+            <img src="/real-about.jpg" alt="Livestock Industry Scale" />
           </div>
         </div>
       </div>

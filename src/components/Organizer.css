@@ -1,6 +1,6 @@
 .organizer-authority {
   background-color: var(--white);
-  padding: 6rem 0;
+  padding: var(--space-xl) 0;
 }
 
 .authority-layout {
@@ -15,7 +15,7 @@
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  color: var(--brand-heritage);
+  color: var(--brand-dark);
 }
 
 .intro-paragraph {
@@ -70,7 +70,7 @@
   display: block;
   font-size: 1.1rem;
   font-weight: 800;
-  color: var(--brand-heritage);
+  color: var(--brand-dark);
   margin-bottom: 0.25rem;
 }
 
@@ -144,6 +144,9 @@
   margin-bottom: 2.5rem;
 }
 
+.btn-outline-white:hover {
+  color: var(--primary);
+}
 .badge {
   font-size: 0.7rem;
   font-weight: 800;

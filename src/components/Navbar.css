@@ -1,14 +1,13 @@
 .navbar {
-  position: sticky;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 1rem 0;
-  background: var(--white);
-  border-bottom: 2px solid var(--primary);
+  padding: 0.5rem 0;
+  background: transparent;
+  border-bottom: none;
   transition: var(--transition);
-  box-shadow: var(--shadow-subtle);
 }
 
 .nav-container {
@@ -18,7 +17,7 @@
 }
 
 .nav-logo img {
-  height: 40px;
+  height: 70px;
   width: auto;
 }
 
@@ -34,11 +33,11 @@
 }
 
 .nav-link {
-  font-weight: 700;
-  font-size: 0.85rem;
-  color: var(--brand-dark);
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: white;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .nav-link:hover {
@@ -54,7 +53,7 @@
   display: none;
   background: none;
   border: none;
-  color: var(--brand-dark);
+  color: white;
   cursor: pointer;
 }
 

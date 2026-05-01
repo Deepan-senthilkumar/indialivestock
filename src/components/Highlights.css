@@ -47,6 +47,7 @@
   background: var(--white); /* White cards on grey bg */
   border: 1px solid rgba(0,0,0,0.05);
   transition: var(--transition);
+  border-radius: 20px;
 }
 
 .opp-step-card:hover {
@@ -59,7 +60,7 @@
   width: 80px;
   height: 80px;
   background: var(--white);
-  color: var(--brand-heritage);
+  color: var(--brand-dark);
   border: 1px solid var(--grey-200);
   border-radius: 50%;
   display: flex;
@@ -80,7 +81,7 @@
   font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: var(--brand-heritage);
+  color: var(--brand-dark);
   margin-bottom: 1rem;
 }
 

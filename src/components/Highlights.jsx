@@ -6,18 +6,18 @@ const Highlights = () => {
   const steps = [
     {
       icon: <Briefcase size={32} />,
-      title: 'B2B Matchmaking',
-      desc: 'Direct interaction between global tech providers and local farmers.'
+      title: 'Premium Stalls',
+      desc: 'Pre-fabricated aluminum octonorm systems with custom fascia and ply panels.'
     },
     {
       icon: <Zap size={32} />,
-      title: 'Innovation Launch',
-      desc: 'Showcasing 50+ startups focused on dairy and poultry automation.'
+      title: 'Full Utilities',
+      desc: 'Includes spot lights, 5A power sockets, tables, chairs, and waste paper baskets.'
     },
     {
       icon: <Globe size={32} />,
-      title: 'Global Export',
-      desc: 'Dedicated wing for international trade policy and networking.'
+      title: 'Event Services',
+      desc: 'Dedicated house-keeping, security, and drinking water provided at the venue.'
     }
   ];
 
@@ -31,9 +31,9 @@ const Highlights = () => {
       </div>
       <div className="container">
         <div className="section-header center">
-          <span className="subtitle">Our Roadmap</span>
-          <h2>Business Opportunities</h2>
-          <p>A structured approach to maximize ROI for every stakeholder.</p>
+          <span className="subtitle">Convenience</span>
+          <h2>Service to Exhibitors</h2>
+          <p>We provide comprehensive on-site support to ensure a seamless exhibition experience.</p>
         </div>
 
         <div className="opp-simple-flow">

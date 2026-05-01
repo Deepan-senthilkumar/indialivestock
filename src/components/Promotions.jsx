@@ -1,37 +1,44 @@
-import React from 'react';
-import { Newspaper, Tv, MessageSquare, Mail, Search, Share2, Video, Smartphone, Layout } from 'lucide-react';
+import { Newspaper, Tv, Mail, MapPin, Globe } from 'lucide-react';
 import './Promotions.css';
 
 const Promotions = () => {
-  const channels = [
-    { icon: <Newspaper />, name: 'Newspaper Ads', desc: 'English & Tamil coverage' },
-    { icon: <Tv />, name: 'TV Promotions', desc: 'Regional channel spots' },
-    { icon: <MessageSquare />, name: 'SMS Campaigns', desc: 'Targeted farmer outreach' },
-    { icon: <Mail />, name: 'Email Marketing', desc: 'Trade visitor database' },
-    { icon: <Search />, name: 'Google Ads', desc: 'Search & Display network' },
-    { icon: <Share2 />, name: 'Social Media', desc: 'FB & Instagram ads' },
-    { icon: <Video />, name: 'YouTube', desc: 'Video promotions' },
-    { icon: <Smartphone />, name: 'WhatsApp', desc: 'Business broadcasts' },
-    { icon: <Layout />, name: 'Outdoor Ads', desc: 'Hoardings & Billboards' },
+  const strategy = [
+    { icon: <Newspaper />, title: 'Print Media', desc: 'English & Tamil Dailies' },
+    { icon: <Tv />, title: 'Television', desc: 'National & Tamil Channels' },
+    { icon: <Globe />, title: 'Digital Ads', desc: 'Google, FB, YT, WhatsApp' },
+    { icon: <MapPin />, title: 'Outdoor', desc: 'Strategic Pole Signs' },
+    { icon: <Mail />, title: 'Direct Reach', desc: 'Invitations & SMS' }
   ];
 
   return (
-    <section className="section promotions">
-      <div className="container">
-        <div className="section-title">
-          <h2>Marketing & Promotions</h2>
-          <p>Our extensive campaign to ensure maximum trade visitor turnout.</p>
+    <section id="promotions" className="promo-industrial-split">
+      <div className="promo-container">
+        
+        {/* LEFT PANEL: BOLD TITLE */}
+        <div className="promo-side-panel">
+          <div className="side-content">
+            <span className="side-badge">Strategy</span>
+            <h2>Visibility <br/> & <span className="text-primary">Reach</span></h2>
+            <div className="side-divider"></div>
+            <p>Massive Marketing Impact Strategy for ILS 2027.</p>
+          </div>
         </div>
 
-        <div className="promo-grid">
-          {channels.map((c, i) => (
-            <div key={i} className="promo-card slide-up" style={{ animationDelay: `${i * 0.05}s` }}>
-              <div className="promo-icon">{c.icon}</div>
-              <h4>{c.name}</h4>
-              <p>{c.desc}</p>
-            </div>
-          ))}
+        {/* RIGHT PANEL: CHANNELS */}
+        <div className="promo-main-panel">
+          <div className="channels-list">
+            {strategy.map((item, i) => (
+              <div key={i} className="channel-row">
+                <div className="channel-icon">{item.icon}</div>
+                <div className="channel-text">
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+
       </div>
     </section>
   );

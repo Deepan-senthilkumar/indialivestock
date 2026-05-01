@@ -1,108 +1,140 @@
-.sectors-block-section {
-  padding: 6rem 0;
-  background: var(--white);
+.profiles-hub {
+  background: #fdfdfd;
+  padding: 80px 0;
+  overflow: hidden;
 }
 
-.section-header.center {
-  text-align: center;
-  margin-bottom: 4rem;
+.hub-intro {
+  margin-bottom: 50px;
+  max-width: 700px;
 }
 
-.section-header.center .subtitle {
-  color: var(--primary);
+.hub-badge {
+  display: inline-block;
+  font-size: 0.7rem;
   font-weight: 800;
+  color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
 }
 
-.section-header.center h2 {
-  font-size: 3rem;
+.hub-intro h2 {
+  font-size: 2.8rem;
   font-weight: 900;
-  margin: 1rem 0;
   color: var(--brand-dark);
+  letter-spacing: -1.5px;
+  line-height: 1;
+  margin-bottom: 1.5rem;
 }
 
-.section-header.center p {
-  color: var(--grey-600);
-  font-size: 1rem;
+.hub-intro p {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 500;
 }
 
-.sectors-block-grid {
+/* Hub Grid Layout */
+.hub-grid {
+  margin-bottom: 50px;
+}
+
+.smart-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border: 1px solid #eee;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
 }
 
-.sector-block-item {
-  padding: 4rem 2rem;
+/* Force 5 in a row for both sections */
+.exhibitors-hub .smart-cards,
+.visitors-hub .smart-cards {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Smart Card Design */
+.smart-card {
+  background: white;
+  padding: 22px 25px;
+  border: 1px solid #eee;
+  border-top: 4px solid var(--primary);
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: white;
-  border: 1px solid #eee;
-  margin: -0.5px; /* Collapse borders */
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  position: relative;
-  z-index: 1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-.sector-block-item:hover {
-  z-index: 10;
-  transform: translateY(-8px);
-  border-color: var(--primary);
-  box-shadow: 0 15px 40px rgba(200, 16, 46, 0.1);
-}
-
-.s-block-icon {
-  width: 50px;
-  height: 50px;
-  background: var(--primary);
-  color: white;
+.card-icon {
+  width: 44px;
+  height: 44px;
+  background: #fcfcfc;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
-  transition: transform 0.4s ease;
-}
-
-.sector-block-item:hover .s-block-icon {
-  transform: scale(1.1) rotate(5deg);
-}
-
-.s-block-icon svg {
-  width: 24px;
-  height: 24px;
-}
-
-.s-block-text h3 {
-  font-size: 1rem;
-  font-weight: 900;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  color: var(--brand-dark);
-  transition: color 0.3s ease;
-}
-
-.sector-block-item:hover .s-block-text h3 {
   color: var(--primary);
+  margin-bottom: 18px;
+  transition: all 0.3s ease;
 }
 
-.s-block-text p {
-  font-size: 0.85rem;
-  color: var(--grey-600);
-  line-height: 1.4;
+.smart-card h4 {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--brand-dark);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.smart-card li {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #666;
+  padding: 4px 0;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.smart-card li:last-child {
+  border-bottom: none;
+}
+
+/* Ensure all cards follow the same rule */
+.border-red, .border-blue, .border-grey, .border-dark, .visitor-card {
+  border-top: 4px solid var(--primary) !important;
+}
+
+.smart-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+  border-color: var(--primary);
+}
+
+.smart-card:hover .card-icon {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+@media (max-width: 1400px) {
+  .exhibitors-hub .smart-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 1024px) {
-  .sectors-block-grid {
+  .hub-intro h2 { font-size: 2.4rem; }
+  .exhibitors-hub .smart-cards,
+  .visitors-hub .smart-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 576px) {
-  .sectors-block-grid {
+@media (max-width: 600px) {
+  .exhibitors-hub .smart-cards,
+  .visitors-hub .smart-cards {
     grid-template-columns: 1fr;
   }
+  .hub-intro h2 { font-size: 2rem; }
 }

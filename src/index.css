@@ -4,7 +4,6 @@
   /* Core Brand Palette - Industrial Authority */
   --brand-dark: #1a0608; 
   --brand-dark-light: #2d0a0e;
-  --brand-heritage: #4D1D1D; /* New Heritage Brown for fonts */
   --primary: #c8102e; 
   --primary-dark: #a50d26;
   --accent: #ffd60a;
@@ -25,8 +24,8 @@
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
-  --space-lg: 4rem;
-  --space-xl: 6.5rem;
+  --space-lg: 2rem;   /* Reduced from 4rem */
+  --space-xl: 4rem;   /* Reduced from 6.5rem */
   
   /* UI Elements - Practical Rectangular */
   --radius-sm: 0px; /* Sharp corners for industrial feel */
@@ -62,16 +61,12 @@ body {
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
   line-height: 1.2;
-  color: var(--brand-heritage);
+  color: var(--brand-dark);
 }
 
 h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 900; letter-spacing: -2px; }
 h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; letter-spacing: -1px; }
 h3 { font-size: 1.5rem; font-weight: 700; }
-
-p {
-  max-width: 65ch; /* Comfortable reading width */
-}
 
 .container {
   max-width: 1320px;

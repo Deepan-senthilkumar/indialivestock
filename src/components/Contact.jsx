@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import './Contact.css';
 
@@ -18,22 +17,22 @@ const Contact = () => {
               <div className="method-item">
                 <div className="m-icon"><Phone size={18} /></div>
                 <div className="m-text">
-                  <strong>Phone Support</strong>
-                  <span>+91 91591 66466</span>
+                  <strong>Stall Enquiries</strong>
+                  <span>+91-9391391162, +91-9566187502</span>
                 </div>
               </div>
               <div className="method-item">
                 <div className="m-icon"><Mail size={18} /></div>
                 <div className="m-text">
                   <strong>Email Inquiry</strong>
-                  <span>prompttradefairs@gmail.com</span>
+                  <span>info@prompttradefairs.com</span>
                 </div>
               </div>
               <div className="method-item">
                 <div className="m-icon"><MapPin size={18} /></div>
                 <div className="m-text">
                   <strong>Office Location</strong>
-                  <span>Chennai, Tamil Nadu</span>
+                  <span>Plot No: 324, Ram Nagar South Extn, Pallikaranai, Chennai</span>
                 </div>
               </div>
             </div>
