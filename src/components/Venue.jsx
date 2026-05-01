@@ -1,5 +1,5 @@
 import { Plane, Train, Clock } from 'lucide-react';
-import venueImg from '../assets/Codissia-Coimbatore.webp';
+import venueImg from '/public/1.png';
 import './Venue.css';
 
 const Venue = () => {
